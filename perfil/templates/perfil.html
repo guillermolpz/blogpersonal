@@ -1,0 +1,31 @@
+<!--Herencia de la plantilla base-->
+{% extends 'base.html' %}
+<!--Titulo a mostrar en el navegador-->
+{% block  titulo %}
+Perfil
+{% endblock %}
+<!--Carga de archivos estaticos-->
+{% load static %}
+<!--Contenido-->
+{% block  content %}
+<main>
+    <section class="profile">
+      <div class="profile-img">
+          <img src="{% static '/img/profile-pic.jpg' %}" alt="">
+      </div>
+      <div class="profile-info">
+          <h2>Hola, ni mombre es Guillermo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque natus repellat rerum quidem inventore dolorem ex ratione mollitia, dicta consectetur distinctio dolore error expedita modi, nemo id accusamus quo?</p>
+      </div>
+    </section>
+    <section class="projects-container">
+        <h3>Porjectos</h3>
+        {% for project in projects %}
+            <div class="project">
+                <h4>{{ project.titulo }}</h4>
+                <p>{{ project.descripcion }}</p>
+            </div>
+        {% endfor %}
+    </section>
+  </main>
+  {% endblock %}

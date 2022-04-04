@@ -1,0 +1,26 @@
+<!--Herencia de la plantilla base-->
+{% extends 'base.html' %}
+<!--Titulo a mostrar en el navegador-->
+{% block  titulo %}
+Home
+{% endblock %}
+<!--Clase css-->
+{% block  class_css %} 
+class="home-body"
+{% endblock %}
+<!--Contenido-->
+{% block  content %}
+<main class="home-main">
+    <div class="main-container">
+        <p class="main-container_text">
+            Conoce las nuevas tecnologias
+        </p>
+        <a class="main-container_link" href="{% url 'Publicaciones' %}">Entra ya!</a>
+    </div>
+</main>
+{% endblock %}
+
+{% block  contact %}
+{% endblock %}
+{% block  footer %}
+{% endblock %}
