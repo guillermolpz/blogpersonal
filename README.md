@@ -19,8 +19,7 @@ _Requerimientos para probar este ejemplo sencillo en Django._
     ```
 * Instalar librerías necesarias.
     ```
-    pip install Django
-    pip install django-ckeditor
+    pip install -r requirements.txt
     ```
 ## Pasos necesarios para ejecutar la aplicación.
 > Nota: para revisar cada migración ejecutar las siguientes sentencias o pasar directo a ejecutar los comandos.
